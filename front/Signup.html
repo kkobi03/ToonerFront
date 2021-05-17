@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            html{
+                width: 100%;
+                height: 100%;
+            }
+            .box{
+                display: table;
+                width: 480px;
+                height: 450px;
+                background: rgb(180, 225, 244);
+                border-radius: 80px;
+                margin: 100px auto;
+            }
+            .box_inner{
+                line-height: 50px;
+                display: table-cell;
+                text-align: center;
+                vertical-align: middle;
+            }
+            .contents{
+                display: inline-block;
+            }
+            .left{
+                text-align: left;
+            }
+            .textbox{
+                border : 1.3px solid gray;
+                width: 250px;
+                border-radius: 5px;
+                height: 30px;
+                margin-left: 10px;
+            }
+            table{
+                padding-left: 10px;
+                text-align: left;
+            }
+            #button{
+                font-size: 15px;
+                height: 40px;
+                width: 120px;
+                border: none white;
+                background-color: white;
+                border-radius: 5px;
+
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box">
+            <div class="box_inner">
+                <div class="contents">
+                <h2 class="left">회원가입</h2>
+                <form action="">
+                     <table id="table">
+                        <tr>
+                            <td>아이디(이메일)</td> <td><input class="textbox" type="text" placeholder=" 사용하실 이메일 주소를 입력해주세요" ></td>
+                        </tr>
+                        <tr>
+                            <td>비밀번호</td> <td><input class="textbox" type="text"  placeholder=" 영문 숫자를 조합하여 작성해주세요" ></td>
+                        </tr>
+                        <tr>
+                            <td>닉네임</td> <td><input class="textbox" type="text"  placeholder=" 사용하실 닉네임을 입력해주세요" ></td>
+                        </tr>
+                        <tr>
+                            <td>선호 장르</td> <td><input class="textbox" type="text"  placeholder=" ex)로맨스" ></td>
+                        </tr>
+                     </table>
+                     <p><input id="button" type="submit" value="계정 생성 >"></p>
+              </form>
+            </div>
+          </div>
+        </div>
+    </body>
+</html>
