@@ -1,0 +1,40 @@
+#header{
+    width:100%;
+    height:12%;
+  }
+  #nav{
+    text-align: center;
+    width:65%;
+    height:65%;
+    float:left;
+    border-right:6px solid black;
+  }
+  #content{
+    width:30%;
+    height:65%;
+    float: right;
+  }
+  #footer{
+    width:100%;
+    height:15%;
+    clear:both;
+  }
+  #h_span{
+    display:inline;
+    padding: 3%;
+    width:150px;
+    font-family:"Consolas", "monospace";
+    line-height: 100px;
+  }
+  
+  .container{
+    width=100%;
+    background-color: white;
+    margin:0 auto;
+  }
+  
+  .div{
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  

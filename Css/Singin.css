@@ -40,3 +40,16 @@ html{
     border-radius: 5px;
 
 }
+#wrap{width:100%; height:100%; padding-top: 60px;}
+#wrap > h1{font-size:0;}
+
+header .logo_box{position:absolute; top:10px; left: 10px;}
+header .logo_box img{width:80px;}
+
+#wrap header{width:100%; height: 72px; position:fixed; top:0px; z-index:20;}
+#wrap header nav{width: 100%; height: 100%;}
+#wrap header nav ul{width: 100%; height: 100%; display:flex; flex-direction: row; justify-content: left; padding-left: 100px;}
+#wrap header nav ul li{margin: 0px 15px 0px 15px;}
+#wrap header nav ul li a{font-size: 15px;}
+
+#container{width:100%; height: 100%;}

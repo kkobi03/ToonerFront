@@ -42,3 +42,7 @@ table{
     border-radius: 5px;
 
 }
+#wrap{width:100%; height:100%; padding-top: 60px;}
+#wrap > h1{font-size:0;}
+header .logo_box{position:absolute; top:10px; left: 10px;}
+header .logo_box img{width:80px;}
