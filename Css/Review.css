@@ -1,3 +1,4 @@
+/* 상단 네비게이션 바 */
 body {
 	margin: 0;
 	font-family: 'Nanum Gothic', sans-serif;
@@ -12,7 +13,7 @@ a {
 	justify-content: space-between;
 	align-items: center;
 	/*background-color: gray;*/
-	padding: 8px 12px;
+	padding: 10px 12px;
 }
 .navbar_logo img {
 	width: 80px;

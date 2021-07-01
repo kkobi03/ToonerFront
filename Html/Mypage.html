@@ -6,19 +6,28 @@
     <title> My page </title>
   </head>
   <body>
-    <div id="header">
-      <a href="main.html"><img src="/images/tooner_logo.png" width="100px" height="100px"></a>
-      <a href=""><span style="display:inline-block; width:120px"><strong>자유게시판</strong></span></a>
-      <a href=""><span style="display:inline-block; width:120px"><strong>웹툰리뷰</strong></span></a>
-      <a href="mypage.html"><span style="display:inline-block; width:120px"><strong>마이페이지</strong></span></a>
-      <span style="display:inline-block; width:200px"><strong>검색</strong></span>
-      <span>
-        <input type="text" placeholder="검색어 입력">
-        <button>검색</button>
-      </span>
-      <a href="signin.html"><span style="display:inline-block; width:120px"><strong>Sign In</strong></span></a>
-      <a href="signup.html"><span style="display:inline-block; width:120px"><strong>Sign Up</strong></span></a>
-    </div>
+    <!--상단 네비게이션 바-->
+    <nav class="navbar">
+      <div class="navbar_logo">
+          <a href="/Html/Main.html"><img src="/images/tooner_logo.png" alt=""></a>
+      </div>
+      
+      <ul class="navbar_menu">
+          <li><a href="#">자유게시판</a></li>
+          <li><a href="/Html/Review.html">웹툰리뷰</a></li>
+          <li><a href="/Html/Mypage.html">마이페이지</a></li>
+          <li><a href="#">검색</a></li>
+      </ul>
+
+      <ul class="navbar_search">
+          <li><a href=""><input type="text" placeholder="검색어 입력">검색</a></li>
+          <li><a href=""><button>로그인</button></a></li>
+          <li><a href=""><button>회원가입</button></a></li>        
+      </ul>
+
+      <!-- <a href="#" class="navbar_toogleBtn"></a>
+      <i class="fas fa-bars"></i> -->
+  </nav>
     <hr width="100%" color="black">
     <div id="nav">
       <div id="n1"> <strong text-align:center;> MY PAGE </strong></div>
