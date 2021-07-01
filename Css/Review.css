@@ -11,7 +11,7 @@ a {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	background-color: gray;
+	/*background-color: gray;*/
 	padding: 8px 12px;
 }
 .navbar_logo img {
@@ -38,14 +38,23 @@ a {
 .navbar_search li {
 	padding: 8px 10px;
 }
-.navbar_toogleBtn {
+
+.navbar_search button {
+    height: 30px;
+    width: 80px;
+    border: none rgb(180, 225, 244);
+    background-color: rgb(180, 225, 244);
+    border-radius: 5px;
+
+}
+
+/*.navbar_toogleBtn {
 	display: none;
 	position:absolute;
 	right: 32px;
 	font-size: 24px;
 	color: rgb(180, 225, 244);
-}
-
+}*/
 @media screen and (max-width: 768px) {
 	.navbar {
 		flex-direction: column;
