@@ -1,123 +1,137 @@
-#header{
-    width:100%;
-    height:12%;
-  }
-  #nav{
-    text-align: center;
-    width:65%;
-    height:65%;
-    float:left;
-    border-right:6px solid black;
-  }
-  #content{
-    width:30%;
-    height:65%;
-    float: right;
-  }
-  #footer{
-    width:100%;
-    height:15%;
-    clear:both;
-  }
-  #h_span{
-    display:inline;
-    padding: 3%;
-    width:150px;
-    font-family:"Consolas", "monospace";
-    line-height: 100px;
-  }
-  
-  .container{
-    width=100%;
-    background-color: white;
-    margin:0 auto;
-  }
-  
-  .div{
-    padding-left: 100px;
-    padding-right: 100px;
-  }
-  
- /* 상단 네비게이션 바  */
-  body {
-    margin: 0;
-    font-family: 'Nanum Gothic', sans-serif;
-  }
-  
-  a {
-    text-decoration: none;
-    color: black;
-  }
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    /*background-color: gray;*/
-    padding: 8px 12px;
-  }
-  .navbar_logo img {
-    width: 80px;
-  }
-  .navbar_menu {
-    display: flex;
-    list-style: none;
-    padding-left: 0;
-  }
-  .navbar_menu li {
-    padding: 8px 20px;
-  }
-  .navbar_menu li:hover {
-    background-color: rgb(180, 225, 244);
-    border-radius: 100px;
-  }
-  
-  .navbar_search {
-    display: flex;
-    list-style: none;
-    padding-left: 0;
-  }
-  .navbar_search li {
-    padding: 8px 10px;
-  }
-  
-  .navbar_search button {
-      height: 30px;
-      width: 80px;
-      border: none rgb(180, 225, 244);
-      background-color: rgb(180, 225, 244);
-      border-radius: 5px;
-  
-  }
-  
-  /*.navbar_toogleBtn {
-    display: none;
-    position:absolute;
-    right: 32px;
-    font-size: 24px;
-    color: rgb(180, 225, 244);
-  }*/
-  @media screen and (max-width: 768px) {
-    .navbar {
-      flex-direction: column;
-      align-items: flex-start;
-      padding: 10px 24px;
-    }
-    .navbar_menu {
-      display: none;
-      flex-direction: column;
-      align-items: center;
-      width: 100%;
-    }
-    .navbar_menu li {
-      width: 100%;
-      text-align: center;
-    }
-    .navbar_search {
-      justify-content: center;
-      width: 100%;
-    }
-    .navbar_toogleBtn {
-      display: block;
-    }
-  }
-  
+#header {
+  width: 100%;
+  height: 12%;
+}
+#nav {
+  text-align: center;
+  width: 65%;
+  height: 65%;
+  float: left;
+  border-right: 6px solid black;
+}
+#content {
+  width: 30%;
+  height: 65%;
+  float: right;
+}
+#footer {
+  width: 100%;
+  height: 15%;
+  clear: both;
+}
+#h_span {
+  display: inline;
+  padding: 3%;
+  width: 150px;
+  font-family: "Consolas", "monospace";
+  line-height: 100px;
+}
+
+.container {
+  width: 100%;
+  background-color: white;
+  margin: 0 auto;
+}
+
+.div {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+/* 상단 네비게이션 바  */
+:root {
+  --main-color: rgb(180, 225, 244);
+  --bright-color: rgba(204, 236, 250, 0.59);
+  --back-color: #f6f6f6;
+}
+body {
+  margin: 0;
+  font-family: "Nanum Gothic", sans-serif;
+  background-color: var(--back-color);
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+#s_in {
+  height: 30px;
+  width: 75px;
+  border: none white;
+  background-color: var(--bright-color);
+  border-radius: 5px;
+  cursor: pointer;
+}
+#s_up {
+  height: 30px;
+  width: 75px;
+  border: none white;
+  background-color: var(--main-color);
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /*background-color: gray;*/
+  padding-right: 12px;
+  padding-bottom: 0;
+  border-bottom: 2.5px solid gray;
+}
+.navbar_logo img {
+  padding-left: 10px;
+  width: 80px;
+}
+.navbar_menu {
+  margin: 0;
+  flex-shrink: 0;
+  display: flex;
+  list-style: none;
+  padding-top: 20px;
+}
+.navbar_menu li {
+  padding: 8px 20px;
+}
+.navbar_menu li:hover {
+  background-color: var(--main-color);
+  border-radius: 100px;
+}
+
+.navbar_search {
+  flex-shrink: 0;
+  display: flex;
+  list-style: none;
+  padding-left: 50px;
+}
+.navbar_search li {
+  padding: 8px 10px;
+}
+#search_btn {
+  background-color: var(--back-color);
+  border: none;
+}
+.Sign_btn {
+  flex-shrink: 0;
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+}
+.Sign_btn li {
+  padding: 8px 10px;
+}
+.fa-search {
+  padding-left: 10px;
+  font-size: 20px;
+  color: gray;
+}
+#search_box {
+  border-radius: 3px;
+  width: 250px;
+  height: 30px;
+  border: 1px solid gray;
+  background-color: white;
+}
