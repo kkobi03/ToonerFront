@@ -2,12 +2,10 @@
 :root {
   --main-color: rgb(180, 225, 244);
   --bright-color: rgba(204, 236, 250, 0.59);
-  --back-color: #f6f6f6;
 }
 body {
   margin: 0;
   font-family: "Nanum Gothic", sans-serif;
-  background-color: var(--back-color);
 }
 
 a {
@@ -21,7 +19,6 @@ a {
   border: none white;
   background-color: var(--bright-color);
   border-radius: 5px;
-  cursor: pointer;
 }
 #s_up {
   height: 30px;
@@ -30,7 +27,6 @@ a {
   background-color: var(--main-color);
   border-radius: 5px;
   color: white;
-  cursor: pointer;
 }
 
 .navbar {
@@ -38,20 +34,18 @@ a {
   justify-content: space-between;
   align-items: center;
   /*background-color: gray;*/
-  padding-right: 12px;
+  padding: 10px 12px;
   padding-bottom: 0;
-  border-bottom: 2.5px solid gray;
+  border-bottom: 2px solid gray;
 }
 .navbar_logo img {
-  padding-left: 10px;
   width: 80px;
 }
 .navbar_menu {
-  margin: 0;
-  flex-shrink: 0;
   display: flex;
   list-style: none;
-  padding-top: 20px;
+  padding-left: 0;
+  padding-top: 40px;
 }
 .navbar_menu li {
   padding: 8px 20px;
@@ -61,31 +55,17 @@ a {
   border-radius: 100px;
 }
 
-.navbar_search {
-  flex-shrink: 0;
-  display: flex;
-  list-style: none;
-  padding-left: 50px;
-}
-.navbar_search li {
-  padding: 8px 10px;
-}
-#search_btn {
-  background-color: var(--back-color);
-  border: none;
-}
-.Sign_btn {
-  flex-shrink: 0;
+.navbar_right {
   display: flex;
   list-style: none;
   padding-left: 0;
 }
-.Sign_btn li {
+.navbar_right li {
   padding: 8px 10px;
 }
 .fa-search {
   padding-left: 10px;
-  font-size: 20px;
+  font-size: 24px;
   color: gray;
 }
 #search_box {
@@ -94,4 +74,42 @@ a {
   height: 30px;
   border: 1px solid gray;
   background-color: white;
+}
+.navbar_tBtn {
+  display: none;
+  position: absolute;
+  right: 32px;
+  font-size: 24px;
+  color: rgb(180, 225, 244);
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px 24px;
+  }
+  .navbar_menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .navbar_menu li {
+    width: 100%;
+    text-align: center;
+  }
+  .navbar_right {
+    display: none;
+    justify-content: center;
+    width: 100%;
+  }
+  .navbar_tBtn {
+    display: block;
+  }
+
+  .navbar_menu.active,
+  .navbar_right.active {
+    display: flex;
+  }
 }
