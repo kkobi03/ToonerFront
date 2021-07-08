@@ -6,7 +6,6 @@
 }
 body {
   margin: 0;
-  padding: 0;
   font-family: "Nanum Gothic", sans-serif;
   background-color: var(--back-color);
 }
@@ -139,72 +138,4 @@ a {
 }
 .category li:hover {
   font-weight: bold;
-}
-/*글쓰기*/
-.Writing {
-  float: right;
-  width: 85%;
-  height: 100px;
-}
-.Writing_box {
-  margin: 20px;
-  background-color: var(--bright-color);
-}
-.info {
-  padding-left: 30px;
-  display: inline-block;
-  width: 85%;
-}
-.fa-plus-square {
-  padding-right: 5px;
-  font-size: 15px;
-}
-.Writing_Btn {
-  display: inline-block;
-}
-/*리뷰 글 목록*/
-.Reviews {
-  margin: 0;
-  padding: 0;
-  background-color: var(--back-color);
-  float: right;
-  width: 85%;
-}
-.Reviews_list {
-  padding: 50px 100px 100px 100px;
-  list-style: none;
-}
-.user_review {
-  padding: auto;
-}
-.Reviews_list li {
-  padding: 10px 10px 0px 10px;
-  border-bottom: 2px solid gray;
-}
-.review_thumb {
-  display: inline-block;
-  float: left;
-}
-.review_lines {
-  height: 110px;
-  margin: 0 10px 0px 10px;
-  display: inline-block;
-  width: 60%;
-}
-.review_title {
-  padding: 5px 0 0 10px;
-  font-size: 24px;
-}
-.webtoon_title {
-  height: 20px;
-  padding: 5px 0 0 10px;
-}
-.writer {
-  text-align: right;
-}
-.rating {
-  display: inline-block;
-  width: 20%;
-  float: right;
-  background-color: yellow;
 }
