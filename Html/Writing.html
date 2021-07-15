@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/Css/Review.css">
+    <link rel="stylesheet" href="/Css/Writing.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
     <title>Writing</title>
     <script src="https://kit.fontawesome.com/96bcc038d1.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
 <!--상단 네비게이션 바-->
     <nav class="navbar">
@@ -19,7 +20,7 @@
         </div>
         
         <ul class="navbar_menu">
-            <li><a href="#">자유게시판</a></li>
+            <li><a href="/Html/Freeboard.html">자유게시판</a></li>
             <li><a href="/Html/Review.html">웹툰리뷰</a></li>
             <li><a href="/Html/Mypage.html">마이페이지</a></li>
             <li><a href="#">검색</a></li>
@@ -38,7 +39,7 @@
         </ul>
 
     </nav>
-<!--사이드바-->
+    <!--사이드바-->
     <nav class="side_navbar">
         <div id="review_title">
             <p>장르별<br>웹툰 리뷰</p>
@@ -58,7 +59,62 @@
             <li><a href="#">성인</a></li>
         </ul>
     </nav>
-
+    <!--글쓰기-->
+    <div id="editor">This is some sample content.</div>
+    <script src="https://cdn.ckeditor.com/ckeditor5/29.0.0/classic/ckeditor.js"></script>
+    <script>ClassicEditor
+        .create( document.querySelector( '#editor' ), {
+            
+        toolbar: {
+            items: [
+                'heading',
+                '|',
+                'bold',
+                'italic',
+                'link',
+                'bulletedList',
+                'numberedList',
+                '|',
+                'outdent',
+                'indent',
+                '|',
+                'imageUpload',
+                'blockQuote',
+                'undo',
+                'redo'
+            ]
+        },
+        language: 'ko',
+        image: {
+            toolbar: [
+                'imageTextAlternative',
+                'imageStyle:inline',
+                'imageStyle:block',
+                'imageStyle:side'
+            ]
+        },
+            licenseKey: '',
+            
+            
+            
+        } )
+        .then( editor => {
+            window.editor = editor;
+    
+            
+        } )
+        .catch( error => {
+            console.error( 'Oops, something went wrong!' );
+            console.error( 'Please, report the following error on https://github.com/ckeditor/ckeditor5/issues with the build id and the error stack trace:' );
+            console.warn( 'Build id: saw8mvkxse65-w0v279ka5wcu' );
+            console.error( error );
+        } );
+    </script>
+    <button class="writeBtn" type="submit">확인</button>
     
 </body>
 </html>
+
+
+
+

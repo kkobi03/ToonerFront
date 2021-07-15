@@ -102,7 +102,7 @@ a {
   float: left;
   display: flex;
   background-color: var(--bright-color);
-  width: 15%;
+  width: 270px;
   height: 100%;
   flex-direction: column;
 }
@@ -122,9 +122,10 @@ a {
 .nav_review li {
   padding: 20px;
 }
-.nav_review li:hover {
+.nav_review li:hover {s
   font-weight: bold;
 }
+
 .category {
   margin: 0;
   padding: 10px 20px 0 10px;
@@ -138,4 +139,8 @@ a {
 }
 .category li:hover {
   font-weight: bold;
+}
+/*글 작성*/
+.ck-editor__editable {
+  min-height: 500px;
 }
