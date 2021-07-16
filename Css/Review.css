@@ -109,7 +109,7 @@ a {
   float: left;
   display: flex;
   background-color: var(--bright-color);
-  width: 15%;
+  width: 250px;
   height: 89%;
   flex-direction: column;
 }
@@ -149,7 +149,7 @@ a {
 /*글쓰기*/
 .Writing {
   float: right;
-  width: 85%;
+  width: 950px;
   height: 100px;
 }
 .Writing_box {
@@ -159,7 +159,7 @@ a {
 .info {
   padding-left: 30px;
   display: inline-block;
-  width: 85%;
+  width: 750px;
 }
 .fa-plus-square {
   padding-right: 5px;
@@ -174,7 +174,7 @@ a {
   padding: 0;
   background-color: var(--back-color);
   float: right;
-  width: 85%;
+  width: 950px;
 }
 .Reviews_list {
   padding: 50px 100px 100px 100px;
