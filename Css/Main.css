@@ -106,13 +106,9 @@ a {
 }
 /*내용*/
 table {
+  padding: 0 30px 0 10px;
+  width: 100%;
 }
-tr,
-td,
-th {
-  border: 0px;
-}
-
 .content {
   margin: 0 auto;
   width: 1200px;
@@ -125,7 +121,7 @@ th {
 .left_content {
   grid-row: 1/3;
   display: grid;
-  grid-template-rows: 65% 35%;
+  grid-template-rows: 60% 40%;
 }
 
 .best_review {
@@ -135,11 +131,22 @@ th {
 .table_title {
   background-color: var(--bright-color);
 }
+.bestimg {
+  padding-left: 20px;
+  width: 70px;
+}
+.table_wtitle {
+  text-align: left;
+}
+.table_writer {
+  text-align: center;
+}
+
 .writer {
   width: 100px;
 }
 .rank {
-  padding: 0px;
+  padding: 20px;
 }
 .ranks_contents {
   padding: 10px;
