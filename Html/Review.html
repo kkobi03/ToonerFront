@@ -13,92 +13,97 @@
 </head>
 
 <body>
-    <!--상단 네비게이션 바-->
+<!--내용-->
+
+<!--상단 네비게이션 바-->
     <nav class="navbar">
-        <div class="navbar_logo">
-            <a href="/Html/Main.html"><img src="/images/tooner_logo.png" alt=""></a>
+        <div class="navbar_content">
+            <div class="navbar_logo">
+                <a href="/Html/Main.html"><img src="/images/tooner_logo.png" alt=""></a>
+            </div>
+                
+            <ul class="navbar_menu">
+                <li><a href="/Html/Freeboard.html">자유게시판</a></li>
+                <li><a href="/Html/Review.html">웹툰리뷰</a></li>
+                <li><a href="/Html/Mypage.html">마이페이지</a></li>
+                <li><a href="#">검색</a></li>
+            </ul>
+
+            <ul class="navbar_search">
+                <li><form action="">
+                    <input id="search_box" type="text" name="search" placeholder="  내용을 입력해 주세요">
+                    <button id="search_btn" type="submit"><i class="fas fa-search"></i></a></button>
+                </form></li>
+            </ul>
+
+            <ul class="Sign_btn">
+                <li><a href="/Html/Signin.html"><button id="s_in">Sign In</button></a></li>
+                <li><a href="/Html/Signup.html"><button id="s_up" >Sign Up</button></a></li>        
+            </ul>
+        </div>
+    </nav>
+<div class="content">
+        <!--사이드바-->
+        <nav class="side_navbar">
+            <div id="review_title">
+                <p>장르별<br>웹툰 리뷰</p>
+            </div>
+            <ul class="nav_review">
+                <li><a href="#">모든 리뷰</a></li>
+                <li><a href="#">추천(인기, 핫) 리뷰</a></li>
+            </ul>
+            <hr width="85%" color="gray">
+            <ul class="category">
+                <li><a href="#">로맨스</a></li>
+                <li><a href="#">사극</a></li>
+                <li><a href="#">SF/공상과학</a></li>
+                <li><a href="#">공포/스릴러</a></li>
+                <li><a href="#">일상</a></li>
+                <li><a href="#">개그</a></li>
+                <li><a href="#">성인</a></li>
+            </ul>
+        </nav>
+
+        <!--글쓰기-->
+        <div class="Writing">
+            <div class="Writing_box">
+                <div class="info"><p>여러분의 리뷰를 작성해보세요!</p></div>
+                <div class="Writing_Btn"><a href="/Html/Writing.html"><i class="far fa-plus-square"></i>글쓰기</a></div>
+            </div>
         </div>
         
-        <ul class="navbar_menu">
-            <li><a href="/Html/Freeboard.html">자유게시판</a></li>
-            <li><a href="/Html/Review.html">웹툰리뷰</a></li>
-            <li><a href="/Html/Mypage.html">마이페이지</a></li>
-            <li><a href="#">검색</a></li>
-        </ul>
-
-        <ul class="navbar_search">
-            <li><form action="">
-                <input id="search_box" type="text" name="search" placeholder="  내용을 입력해 주세요">
-                <button id="search_btn" type="submit"><i class="fas fa-search"></i></a></button>
-            </form></li>
-        </ul>
-
-        <ul class="Sign_btn">
-            <li><a href="/Html/Signin.html"><button id="s_in">Sign In</button></a></li>
-            <li><a href="/Html/Signup.html"><button id="s_up" >Sign Up</button></a></li>        
-        </ul>
-    </nav>
-
-    <!--사이드바-->
-    <nav class="side_navbar">
-        <div id="review_title">
-            <p>장르별<br>웹툰 리뷰</p>
+        <!--리뷰 글 목록-->
+        <div class="Reviews">
+            <ul class="Reviews_list">
+                <li class="user_review">
+                    <div class="review_thumb"><img src="/images/webtoonimg.jpeg" alt="리뷰썸네일" width="98" height="98"></div>
+                    <div class="review_lines">
+                        <div class="review_title">리뷰 제목</div>
+                        <div class="webtoon_title">웹툰 제목</div>
+                        <div class="writer">작성자 | 작성일</div>
+                    </div>
+                    <div class="rating">별점</div>
+                </li>
+                <li class="user_review">
+                    <div class="review_thumb"><img src="/images/2.jpeg" alt="리뷰썸네일" width="98" height="98"></div>
+                    <div class="review_lines">
+                        <div class="review_title">리뷰 제목</div>
+                        <div class="webtoon_title">웹툰 제목</div>
+                        <div class="writer">작성자 | 작성일</div>
+                    </div>
+                    <div class="rating">별점</div>
+                </li>
+                <li class="user_review">
+                    <div class="review_thumb"><img src="/images/3.jpeg" alt="리뷰썸네일" width="98" height="98"></div>
+                    <div class="review_lines">
+                        <div class="review_title">리뷰 제목</div>
+                        <div class="webtoon_title">웹툰 제목</div>
+                        <div class="writer">작성자 | 작성일</div>
+                    </div>
+                    <div class="rating">별점</div>
+                </li>
+            </ul>
         </div>
-        <ul class="nav_review">
-            <li><a href="#">모든 리뷰</a></li>
-            <li><a href="#">추천(인기, 핫) 리뷰</a></li>
-        </ul>
-        <hr width="85%" color="gray">
-        <ul class="category">
-            <li><a href="#">로맨스</a></li>
-            <li><a href="#">사극</a></li>
-            <li><a href="#">SF/공상과학</a></li>
-            <li><a href="#">공포/스릴러</a></li>
-            <li><a href="#">일상</a></li>
-            <li><a href="#">개그</a></li>
-            <li><a href="#">성인</a></li>
-        </ul>
-    </nav>
-
-    <!--글쓰기-->
-    <div class="Writing">
-        <div class="Writing_box">
-            <div class="info"><p>여러분의 리뷰를 작성해보세요!</p></div>
-            <div class="Writing_Btn"><a href="/Html/Writing.html"><i class="far fa-plus-square"></i>글쓰기</a></div>
-        </div>
-    </div>
-    
-    <!--리뷰 글 목록-->
-    <div class="Reviews">
-        <ul class="Reviews_list">
-            <li class="user_review">
-                <div class="review_thumb"><img src="/images/webtoonimg.jpeg" alt="리뷰썸네일" width="98" height="98"></div>
-                <div class="review_lines">
-                    <div class="review_title">리뷰 제목</div>
-                    <div class="webtoon_title">웹툰 제목</div>
-                    <div class="writer">작성자 | 작성일</div>
-                </div>
-                <div class="rating">별점</div>
-            </li>
-            <li class="user_review">
-                <div class="review_thumb"><img src="/images/2.jpeg" alt="리뷰썸네일" width="98" height="98"></div>
-                <div class="review_lines">
-                    <div class="review_title">리뷰 제목</div>
-                    <div class="webtoon_title">웹툰 제목</div>
-                    <div class="writer">작성자 | 작성일</div>
-                </div>
-                <div class="rating">별점</div>
-            </li>
-            <li class="user_review">
-                <div class="review_thumb"><img src="/images/3.jpeg" alt="리뷰썸네일" width="98" height="98"></div>
-                <div class="review_lines">
-                    <div class="review_title">리뷰 제목</div>
-                    <div class="webtoon_title">웹툰 제목</div>
-                    <div class="writer">작성자 | 작성일</div>
-                </div>
-                <div class="rating">별점</div>
-            </li>
-        </ul>
-    </div>
+    </div>    
 </body>
 </html>

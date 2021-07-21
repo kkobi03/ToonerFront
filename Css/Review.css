@@ -1,16 +1,13 @@
-/* 상단 네비게이션 바 */
+/* 상단 네비게이션 바  */
 :root {
   --main-color: rgb(180, 225, 244);
   --bright-color: rgba(204, 236, 250, 0.59);
   --back-color: #f6f6f6;
 }
-body {
-  margin: 0 179.5px 0 179.5px;
-  width: 1200px;
-  height: 100%;
-}
 
-html {
+html,
+body {
+  margin: 0;
   padding: 0;
   font-family: "Nanum Gothic", sans-serif;
   background-color: var(--back-color);
@@ -20,7 +17,6 @@ html {
 a {
   text-decoration: none;
   color: black;
-  letter-spacing: 1.5px;
 }
 
 #s_in {
@@ -40,15 +36,20 @@ a {
   color: white;
   cursor: pointer;
 }
-
 .navbar {
+  width: 100%;
+  border-bottom: 2.5px solid gray;
+}
+
+.navbar_content {
+  margin: 0 auto;
+  width: 1200px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   /*background-color: gray;*/
   padding-right: 12px;
   padding-bottom: 0;
-  border-bottom: 2.5px solid gray;
 }
 .navbar_logo img {
   padding-left: 10px;
@@ -103,14 +104,19 @@ a {
   border: 1px solid gray;
   background-color: white;
 }
-
+/*내용*/
+.content {
+  margin: 0 auto;
+  width: 1200px;
+  height: 89%;
+}
 /*사이드바*/
 .side_navbar {
   float: left;
   display: flex;
   background-color: var(--bright-color);
   width: 250px;
-  height: 89%;
+  height: 100%;
   flex-direction: column;
 }
 #review_title {

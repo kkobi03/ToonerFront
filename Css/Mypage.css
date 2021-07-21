@@ -1,18 +1,14 @@
-/*상단바*/
+/* 상단 네비게이션 바  */
 :root {
   --main-color: rgb(180, 225, 244);
   --bright-color: rgba(204, 236, 250, 0.59);
   --back-color: #f6f6f6;
 }
 
+html,
 body {
-  margin: 0 179.5px 0 179.5px;
-  width: 1200px;
-  height: 100%;
-}
-
-html {
   padding: 0;
+  margin: 0;
   font-family: "Nanum Gothic", sans-serif;
   background-color: var(--back-color);
   height: 100%;
@@ -21,7 +17,6 @@ html {
 a {
   text-decoration: none;
   color: black;
-  letter-spacing: 1.5px;
 }
 
 #s_in {
@@ -41,15 +36,20 @@ a {
   color: white;
   cursor: pointer;
 }
-
 .navbar {
+  width: 100%;
+  border-bottom: 2.5px solid gray;
+}
+
+.navbar_content {
+  margin: 0 auto;
+  width: 1200px;
   display: flex;
-  height: 100px;
   justify-content: space-between;
   align-items: center;
+  /*background-color: gray;*/
   padding-right: 12px;
   padding-bottom: 0;
-  border-bottom: 2.5px solid gray;
 }
 .navbar_logo img {
   padding-left: 10px;
@@ -104,10 +104,15 @@ a {
   border: 1px solid gray;
   background-color: white;
 }
-
+/*내용*/
+.content {
+  margin: 0 auto;
+  width: 1200px;
+  height: 89%;
+}
 /*사이드바*/
 .side_navbar {
-  height: 89%;
+  height: 100%;
   float: left;
   display: flex;
   background-color: var(--bright-color);
@@ -141,7 +146,7 @@ a {
   font-weight: bold;
 }
 /*회원 정보*/
-.content {
+.my_content {
   margin: 0;
   padding: 0;
   background-color: var(--back-color);

@@ -4,13 +4,10 @@
   --bright-color: rgba(204, 236, 250, 0.59);
   --back-color: #f6f6f6;
 }
-body {
-  margin: 0 179.5px 0 179.5px;
-  width: 1200px;
-  height: 100%;
-}
 
-html {
+html,
+body {
+  margin: 0;
   padding: 0;
   font-family: "Nanum Gothic", sans-serif;
   background-color: var(--back-color);
@@ -39,15 +36,20 @@ a {
   color: white;
   cursor: pointer;
 }
-
 .navbar {
+  width: 100%;
+  border-bottom: 2.5px solid gray;
+}
+
+.navbar_content {
+  margin: 0 auto;
+  width: 1200px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   /*background-color: gray;*/
   padding-right: 12px;
   padding-bottom: 0;
-  border-bottom: 2.5px solid gray;
 }
 .navbar_logo img {
   padding-left: 10px;
@@ -103,15 +105,60 @@ a {
   background-color: white;
 }
 /*내용*/
-.best_review {
-  width: 800px;
+table {
 }
-.recommend {
-  width: 400px;
+tr,
+td,
+th {
+  border: 0px;
+}
+
+.content {
+  margin: 0 auto;
+  width: 1200px;
+  padding: 30px;
+  height: 85%;
+  display: grid;
+  grid-template-columns: 65% 35%;
+  grid-template-rows: 50%;
+}
+.left_content {
+  grid-row: 1/3;
+  display: grid;
+  grid-template-rows: 65% 35%;
+}
+
+.best_review {
+  padding: 20px;
+}
+
+.table_title {
+  background-color: var(--bright-color);
+}
+.writer {
+  width: 100px;
 }
 .rank {
-  width: 800px;
+  padding: 0px;
+}
+.ranks_contents {
+  padding: 10px;
+  list-style: none;
+}
+.ranks_li {
+  display: inline-block;
+  padding: 10px 30px 0 10px;
+}
+.rtitle {
+  padding: 5px;
+  text-align: center;
+}
+.recommend {
+  padding: 20px;
+  border-left: 2.5px solid gray;
+  border-bottom: 2.5px solid gray;
 }
 .news {
-  width: 400px;
+  padding: 20px;
+  border-left: 2.5px solid gray;
 }

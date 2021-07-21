@@ -12,147 +12,149 @@
     <script src="https://kit.fontawesome.com/96bcc038d1.js" crossorigin="anonymous"></script>
 </head>
 <body>
+<!--내용-->
 <!--상단 네비게이션 바-->
-    <nav class="navbar">
-        <div class="navbar_logo">
-            <a href="/Html/Main.html"><img src="/images/tooner_logo.png" alt=""></a>
-        </div>
+  <nav class="navbar">
+    <div class="navbar_content">
+      <div class="navbar_logo">
+          <a href="/Html/Main.html"><img src="/images/tooner_logo.png" alt=""></a>
+      </div>
         
-        <ul class="navbar_menu">
-            <li><a href="/Html/Freeboard.html">자유게시판</a></li>
-            <li><a href="/Html/Review.html">웹툰리뷰</a></li>
-            <li><a href="/Html/Mypage.html">마이페이지</a></li>
-            <li><a href="#">검색</a></li>
-        </ul>
+      <ul class="navbar_menu">
+          <li><a href="/Html/Freeboard.html">자유게시판</a></li>
+          <li><a href="/Html/Review.html">웹툰리뷰</a></li>
+          <li><a href="/Html/Mypage.html">마이페이지</a></li>
+          <li><a href="#">검색</a></li>
+      </ul>
 
-        <ul class="navbar_search">
-            <li><form action="">
-                <input id="search_box" type="text" name="search" placeholder="  내용을 입력해 주세요">
-                <button id="search_btn" type="submit"><i class="fas fa-search"></i></a></button>
-            </form></li>
-        </ul>
+      <ul class="navbar_search">
+          <li><form action="">
+              <input id="search_box" type="text" name="search" placeholder="  내용을 입력해 주세요">
+              <button id="search_btn" type="submit"><i class="fas fa-search"></i></a></button>
+          </form></li>
+      </ul>
 
-        <ul class="Sign_btn">
-            <li><a href="/Html/Signin.html"><button id="s_in">Sign In</button></a></li>
-            <li><a href="/Html/Signup.html"><button id="s_up" >Sign Up</button></a></li>        
-        </ul>
+      <ul class="Sign_btn">
+          <li><a href="/Html/Signin.html"><button id="s_in">Sign In</button></a></li>
+          <li><a href="/Html/Signup.html"><button id="s_up" >Sign Up</button></a></li>        
+      </ul>
+  </div>
+  </nav>
+  <div class="content">
+  <!--사이드바-->
+      <nav class="side_navbar">
+          <div id="review_title">
+              <p>장르별<br>웹툰 리뷰</p>
+          </div>
+          <ul class="nav_review">
+              <li><a href="#">모든 리뷰</a></li>
+              <li><a href="#">추천(인기, 핫) 리뷰</a></li>
+          </ul>
+          <hr width="85%" color="gray">
+          <ul class="category">
+              <li><a href="#">로맨스</a></li>
+              <li><a href="#">사극</a></li>
+              <li><a href="#">SF/공상과학</a></li>
+              <li><a href="#">공포/스릴러</a></li>
+              <li><a href="#">일상</a></li>
+              <li><a href="#">개그</a></li>
+              <li><a href="#">성인</a></li>
+          </ul>
+      </nav>
 
-    </nav>
+  <div class="free_content_">
+    <article id="content">
+      <h1 id="free">자유 게시판 </h1>
+      
+      <table id="notice">
+        <tr>
+          <th scope="col" class="tno">No.</th>
+          <th class="ttitle">Title</th>
+          <th class="twrite">Writer</th>
+          <th class="tdate">Date</th>
+          <th class="tread">Read</th>
+        </tr>
+        <tr>
+          <td scope="col">1</td>
+          <td class="left">자유게시판 제목이 들어갈 자리입니다.</td>
+          <td>Host admin</td>
+          <td>2020.10.12</td>
+          <td>Read</td>
+        </tr>
+        <tr>
+          <td scope="col">2</td>
+          <td class="left">사용자가 쓴 글의 제목입니다. ~~~ </td>
+          <td>Host admin</td>
+          <td>2020.10.12</td>
+          <td>Read</td>
+        </tr>
+        <tr>
+          <td scope="col">3</td>
+          <td class="left">ㅏㅏㅏㅏㅏㅈ에 관한 글쓴이의 자유로운 글</td>
+          <td>Host admin</td>
+          <td>2020.10.12</td>
+          <td>Read</td>
+        </tr>
+        <tr>
+          <td scope="col">4</td>
+          <td class="left">eget vehicula metus. In euismod sollicitudinlorem eualiquet</td>
+          <td>Host admin</td>
+          <td>2020.10.12</td>
+          <td>Read</td>
+        </tr>
+        <tr>
+          <td scope="col">5</td>
+          <td class="left">아ㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏ</td>
+          <td>Host admin</td>
+          <td>2020.10.12</td>
+          <td>Read</td>
+        </tr>
+        <tr>
+          <td scope="col">6</td>
+          <td class="left">아ㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏ</td>
+          <td>Host admin</td>
+          <td>2020.10.12</td>
+          <td>Read</td>
+        </tr>
+        <tr>
+          <td scope="col">7</td>
+          <td class="left">아ㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏ</td>
+          <td>Host admin</td>
+          <td>2020.10.11</td>
+          <td>Read</td>
+        </tr>
+        <tr>
+          <td scope="col">8</td>
+          <td class="left">아ㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏ</td>
+          <td>Host admin</td>
+          <td>2020.10.10</td>
+          <td>Read</td>
+        </tr>
+        <tr>
+          <td scope="col">9</td>
+          <td class="left">아ㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏ</td>
+          <td>Host admin</td>
+          <td>2020.10.19</td>
+          <td>Read</td>
+        </tr>
+      </table>
+      <div id="table_search">
+        <input name="" type="text" class="input_box"><input type="button" value="Search" class="btn">
+      </div>
 
-<!--사이드바-->
-    <nav class="side_navbar">
-        <div id="review_title">
-            <p>장르별<br>웹툰 리뷰</p>
-        </div>
-        <ul class="nav_review">
-            <li><a href="#">모든 리뷰</a></li>
-            <li><a href="#">추천(인기, 핫) 리뷰</a></li>
-        </ul>
-        <hr width="85%" color="gray">
-        <ul class="category">
-            <li><a href="#">로맨스</a></li>
-            <li><a href="#">사극</a></li>
-            <li><a href="#">SF/공상과학</a></li>
-            <li><a href="#">공포/스릴러</a></li>
-            <li><a href="#">일상</a></li>
-            <li><a href="#">개그</a></li>
-            <li><a href="#">성인</a></li>
-        </ul>
-    </nav>
+      <div>
+        <button id="write_btn" type="button">글쓰기</button>
+      </div>
 
-<div class="content_">
-  <article id="content">
-    <h1 id="free">자유 게시판 </h1>
-    
-    <table id="notice">
-      <tr>
-        <th scope="col" class="tno">No.</th>
-        <th class="ttitle">Title</th>
-        <th class="twrite">Writer</th>
-        <th class="tdate">Date</th>
-        <th class="tread">Read</th>
-      </tr>
-      <tr>
-        <td scope="col">1</td>
-        <td class="left">자유게시판 제목이 들어갈 자리입니다.</td>
-        <td>Host admin</td>
-        <td>2020.10.12</td>
-        <td>Read</td>
-      </tr>
-      <tr>
-        <td scope="col">2</td>
-        <td class="left">사용자가 쓴 글의 제목입니다. ~~~ </td>
-        <td>Host admin</td>
-        <td>2020.10.12</td>
-        <td>Read</td>
-      </tr>
-      <tr>
-        <td scope="col">3</td>
-        <td class="left">ㅏㅏㅏㅏㅏㅈ에 관한 글쓴이의 자유로운 글</td>
-        <td>Host admin</td>
-        <td>2020.10.12</td>
-        <td>Read</td>
-      </tr>
-      <tr>
-        <td scope="col">4</td>
-        <td class="left">eget vehicula metus. In euismod sollicitudinlorem eualiquet</td>
-        <td>Host admin</td>
-        <td>2020.10.12</td>
-        <td>Read</td>
-      </tr>
-      <tr>
-        <td scope="col">5</td>
-        <td class="left">아ㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏ</td>
-        <td>Host admin</td>
-        <td>2020.10.12</td>
-        <td>Read</td>
-      </tr>
-      <tr>
-        <td scope="col">6</td>
-        <td class="left">아ㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏ</td>
-        <td>Host admin</td>
-        <td>2020.10.12</td>
-        <td>Read</td>
-      </tr>
-      <tr>
-        <td scope="col">7</td>
-        <td class="left">아ㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏ</td>
-        <td>Host admin</td>
-        <td>2020.10.11</td>
-        <td>Read</td>
-      </tr>
-      <tr>
-        <td scope="col">8</td>
-        <td class="left">아ㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏ</td>
-        <td>Host admin</td>
-        <td>2020.10.10</td>
-        <td>Read</td>
-      </tr>
-      <tr>
-        <td scope="col">9</td>
-        <td class="left">아ㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏ</td>
-        <td>Host admin</td>
-        <td>2020.10.19</td>
-        <td>Read</td>
-      </tr>
-    </table>
-    <div id="table_search">
-      <input name="" type="text" class="input_box"><input type="button" value="Search" class="btn">
-    </div>
-
-    <div>
-      <button id="write_btn" type="button">글쓰기</button>
-    </div>
-
-    <div class="clear"></div>
-    <div id="page_control">
-      <a href="#">Prev </a><a href="#">1 </a><a href="#">2 </a><a href="#">3 </a>
-      <a href="#">4 </a><a href="#">5 </a><a href="#">6 </a>
-      <a href="#">7 </a><a href="#">8 </a><a href="#">9 </a>
-      <a href="#">Next </a>
-    </div>
-  </article>
+      <div class="clear"></div>
+      <div id="page_control">
+        <a href="#">Prev </a><a href="#">1 </a><a href="#">2 </a><a href="#">3 </a>
+        <a href="#">4 </a><a href="#">5 </a><a href="#">6 </a>
+        <a href="#">7 </a><a href="#">8 </a><a href="#">9 </a>
+        <a href="#">Next </a>
+      </div>
+    </article>
+  </div>
 </div>
-
 </body>
 </html>

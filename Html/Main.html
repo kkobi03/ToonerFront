@@ -1,18 +1,25 @@
-<!DOCTYPE>
-<html lang="ko">
-  <head>
-    <meta charset="utf-8">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link type="text/css" rel="stylesheet" href="/Css/Main.css">
-    <title> Main Page </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <title>Main</title>
     <script src="https://kit.fontawesome.com/96bcc038d1.js" crossorigin="anonymous"></script>
-  </head>
-  <body>
+</head>
+<body>
+<!--내용-->
 <!--상단 네비게이션 바-->
-    <nav class="navbar">
+  <nav class="navbar">
+    <div class="navbar_content">
       <div class="navbar_logo">
           <a href="/Html/Main.html"><img src="/images/tooner_logo.png" alt=""></a>
       </div>
-      
+        
       <ul class="navbar_menu">
           <li><a href="/Html/Freeboard.html">자유게시판</a></li>
           <li><a href="/Html/Review.html">웹툰리뷰</a></li>
@@ -31,44 +38,67 @@
           <li><a href="/Html/Signin.html"><button id="s_in">Sign In</button></a></li>
           <li><a href="/Html/Signup.html"><button id="s_up" >Sign Up</button></a></li>        
       </ul>
-    </nav>
+  </div>
+  </nav>
 <!--내용-->
-<div class="content">
-    <div class="best_review">
-      <div class="best_r_title">
-        <h3>Best 리뷰</h3>
+  <div class="content">
+    <div class="left_content">
+      <div class="best_review">
+        <div class="best_r_title">
+          <h3>Best 리뷰</h3>
+        </div>
+        <div class="best_table">
+          <table>
+            <tr class="table_title">
+              <th  colspan="2">제목</th>
+              <th>작성자</th>
+            </tr>
+            <tr>
+              <td><img src="/images/낮에 뜨는 달.jpg" width="30px" height="30px" alt=""></td>
+              <td>리뷰 제목이 들어갈 곳</td>
+              <td>작성자</td>
+            </tr>
+            <tr>
+              <td><img src="/images/낮에 뜨는 달.jpg" width="30px" height="30px" alt=""></td>
+              <td>리뷰 제목이 들어갈 곳</td>
+              <td>작성자</td>
+            </tr>
+            <tr>
+              <td><img src="/images/낮에 뜨는 달.jpg" width="30px" height="30px" alt=""></td>
+              <td>리뷰 제목이 들어갈 곳</td>
+              <td>작성자</td>
+            </tr>
+          </table>
+        </div>
       </div>
-      <div class="best_reviews">
-        <table class="best_review_table">
-          <tr>
-            <th scope="col" class="tno">No.</th>
-            <th class="ttitle">Title</th>
-            <th class="twrite">Writer</th>
-            <th class="tdate">Date</th>
-            <th class="tread">Read</th>
-          </tr>
-          <tr>
-            <td scope="col">1</td>
-            <td class="left">제목이 들어갈 자리입니다.</td>
-            <td>admin</td>
-            <td>2020.10.12</td>
-            <td>Read</td>
-          </tr>
-          <tr>
-            <td scope="col">2</td>
-            <td class="left">사용자가 쓴 글의 제목입니다 </td>
-            <td>Host</td>
-            <td>2020.10.12</td>
-            <td>Read</td>
-          </tr>
-          <tr>
-            <td scope="col">3</td>
-            <td class="left"> 글쓴이의 자유로운 글</td>
-            <td>Host</td>
-            <td>2020.10.12</td>
-            <td>Read</td>
-          </tr>
-        </table>
+      <div class="rank">
+        <div class="rank_title">
+          <h3>조회수 순위</h3>
+        </div>
+        <div class="ranks">
+          <ul class="ranks_contents">
+            <li class="ranks_li">
+              <div class="ranks_img"><img src="/images/가령의 정체불명 이야기.jpg" alt="리뷰썸네일">
+              </div>
+              <div class="rtitle">글제목</div>
+            </li>
+            <li class="ranks_li">
+              <div class="ranks_img"><img src="/images/같은 학교 친구.jpg" alt="리뷰썸네일">
+              </div>
+              <div class="rtitle">글제목</div>
+            </li>
+            <li class="ranks_li">
+              <div class="ranks_img"><img src="/images/나의 첫번째 새벽.jpg" alt="리뷰썸네일">
+              </div>
+              <div class="rtitle">글제목</div>
+            </li>
+            <li class="ranks_li">
+              <div class="ranks_img"><img src="/images/남과 여.jpg" alt="리뷰썸네일">
+              </div>
+              <div class="rtitle">글제목</div>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
     <div class="recommend">
@@ -106,14 +136,6 @@
             <td>Read</td>
           </tr>
         </table>
-      </div>
-    </div>
-    <div class="rank">
-      <div class="rank_title">
-        <h3>조회수 순위</h3>
-      </div>
-      <div class="ranks">
-
       </div>
     </div>
     <div class="news">
