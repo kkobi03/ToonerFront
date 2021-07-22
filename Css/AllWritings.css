@@ -152,91 +152,44 @@ a {
 .category li:hover {
   font-weight: bold;
 }
-/*글쓰기*/
-.Writing {
-  float: right;
-  width: 950px;
-  height: 100px;
-}
-.Writing_box {
+/*글내용*/
+.Writings {
   margin: 20px;
-  background-color: var(--bright-color);
-}
-.info {
-  padding-left: 30px;
-  display: inline-block;
-  width: 750px;
-}
-.fa-plus-square {
-  padding-right: 5px;
-  font-size: 15px;
-}
-.Writing_Btn {
-  display: inline-block;
-}
-/*리뷰 글 목록*/
-.Reviews {
-  margin: 0;
   padding: 0;
-  background-color: var(--back-color);
+  width: 902px;
+  height: 95%;
   float: right;
-  width: 950px;
+  border: 1.8px solid gray;
+  border-radius: 5px;
 }
-.Reviews_list {
-  padding: 50px 100px 100px 100px;
+.writing_info {
+  padding: 10px;
   list-style: none;
-}
-.user_review {
-  padding: auto;
-}
-.Reviews_list li {
-  padding: 10px 10px 0px 10px;
-  border-bottom: 2px solid gray;
-}
-.review_thumb {
   display: inline-block;
-  float: left;
+  width: 95%;
 }
-.review_lines {
-  height: 110px;
-  margin: 0 10px 0px 10px;
+.w_title {
+  font-size: 25px;
+  padding: 20px 0 10px 30px;
+}
+.w_writer {
+  padding: 10px 0 10px 30px;
+}
+.w_date {
   display: inline-block;
-  width: 60%;
+  padding: 10px 0 0px 30px;
+  width: fit-content;
 }
-.review_title {
-  padding: 5px 0 0 10px;
-  font-size: 24px;
-}
-.webtoon_title {
-  height: 20px;
-  padding: 5px 0 0 10px;
-}
-.writer {
-  text-align: right;
-}
-.rating {
+.w_read {
   display: inline-block;
-  width: 20%;
-  float: right;
-  padding-top: 35px;
+  padding: 10px 0 0px 30px;
+  width: fit-content;
 }
-/*페이징*/
-.page_control {
-  text-align: center;
-  margin: 20px 0 0 0;
-  margin-left: auto;
-  margin-right: auto;
+.writing_content {
+  margin: 10px;
+  width: 98%;
+  border-top: 1.8px solid gray;
 }
-
-.page_control a {
-  padding: 2px 5px;
-  text-decoration: none;
-  color: #333;
-  margin: 0 5px;
-}
-
-.page_control a:hover {
-  font-weight: bold;
-  color: var(--main-color);
-  margin: 0 5px;
+.w_content {
+  padding-top: 10px;
 }
