@@ -172,7 +172,7 @@ article table#notice th {
   font-family: seo;
   font-weight: bold;
   padding: 5px;
-  background-color: lightblue;
+  background-color: var(--main-color);
   background-position: center center;
   background-repeat: repeat-x;
 }
@@ -213,22 +213,22 @@ article th.tread {
 #write_btn {
   margin-left: 50px;
   height: 30px;
-  width: 100px;
-  border: 1px solid #333;
-  border-radius: 10px;
-  background-color: lightblue;
-  color: #fff;
+  width: 95px;
+  border: 0px solid #333;
+  border-radius: 5px;
+  background-color: var(--main-color);
+  color: black;
 }
 
 #table_search .btn {
   padding: 3px;
   margin-left: 10px;
   width: 95px;
-  height: 35px;
-  border: 1px solid #999;
-  border-radius: 10px;
+  height: 30px;
+  border: 0px solid #999;
+  border-radius: 5px;
   color: #fff;
-  background-color: lightblue;
+  background-color: var(--main-color);
   background-position: center center;
 }
 
@@ -250,8 +250,8 @@ article #table_search {
   height: 25px;
   width: 150px;
   border: 1px solid #333;
-  border-radius: 10px;
-  background-color: #fefded;
+  border-radius: 5px;
+  background-color: white;
 }
 
 #page_control {
@@ -270,7 +270,7 @@ article #table_search {
 
 #page_control a:hover {
   font-weight: bold;
-  color: #f90;
+  color: var(--main-color);
   margin: 0 5px;
 }
 
