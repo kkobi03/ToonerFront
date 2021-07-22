@@ -4,13 +4,9 @@
   --bright-color: rgba(204, 236, 250, 0.59);
   --back-color: #f6f6f6;
 }
+html,
 body {
-  margin: 0 179.5px 0 179.5px;
-  width: 1200px;
-  height: 100%;
-}
-
-html {
+  margin: 0;
   padding: 0;
   font-family: "Nanum Gothic", sans-serif;
   background-color: var(--back-color);
@@ -103,14 +99,19 @@ a {
   border: 1px solid gray;
   background-color: white;
 }
-
+/*내용*/
+.content {
+  margin: 0 auto;
+  width: 1200px;
+  height: 89%;
+}
 /*사이드바*/
 .side_navbar {
   float: left;
   display: flex;
   background-color: var(--bright-color);
-  width: 270px;
-  height: 89%;
+  width: 250px;
+  height: 100%;
   flex-direction: column;
 }
 #review_title {
