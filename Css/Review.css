@@ -220,3 +220,23 @@ a {
   float: right;
   background-color: yellow;
 }
+/*페이징*/
+.page_control {
+  text-align: center;
+  margin: 20px 0 0 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page_control a {
+  padding: 2px 5px;
+  text-decoration: none;
+  color: #333;
+  margin: 0 5px;
+}
+
+.page_control a:hover {
+  font-weight: bold;
+  color: var(--main-color);
+  margin: 0 5px;
+}
