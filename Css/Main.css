@@ -105,10 +105,7 @@ a {
   background-color: white;
 }
 /*내용*/
-table {
-  padding: 0 30px 0 10px;
-  width: 100%;
-}
+
 .content {
   margin: 0 auto;
   width: 1200px;
@@ -118,33 +115,63 @@ table {
   grid-template-columns: 65% 35%;
   grid-template-rows: 50%;
 }
+.btable,
+.news_table {
+  border-collapse: collapse;
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 15px;
+}
 .left_content {
   grid-row: 1/3;
   display: grid;
   grid-template-rows: 60% 40%;
 }
-
+/*4분할 내용*/
 .best_review {
   padding: 20px;
 }
-
+.btable {
+  width: 700px;
+}
 .table_title {
-  background-color: var(--bright-color);
+  background-color: var(--main-color);
+  height: 30px;
+}
+
+.btable td,
+.news_table td {
+  padding: 5px 0;
+  border-bottom: 1px solid gray;
+}
+.w_title {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  width: 10px;
+}
+.writer {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  width: 50px;
 }
 .bestimg {
+  text-align: center;
   padding-left: 20px;
-  width: 70px;
+  width: 100px;
 }
 .table_wtitle {
+  width: 400px;
   text-align: left;
+  padding-left: 20px;
 }
 .table_writer {
+  width: 100px;
   text-align: center;
 }
 
 .writer {
   width: 100px;
 }
+/*조회수순위*/
 .rank {
   padding: 20px;
 }
@@ -160,12 +187,42 @@ table {
   padding: 5px;
   text-align: center;
 }
+/*추천웹툰*/
 .recommend {
   padding: 20px;
   border-left: 2.5px solid gray;
   border-bottom: 2.5px solid gray;
 }
+.recommend_webtoon_table {
+  width: 60%;
+  border-collapse: collapse;
+  text-align: center;
+}
+.reco_no {
+  width: 50px;
+  text-align: center;
+}
+.recoimg {
+  width: 50px;
+}
+.recommend_webtoon_table td {
+  height: 60px;
+  border: none;
+}
+/*최신글*/
 .news {
   padding: 20px;
   border-left: 2.5px solid gray;
+}
+.news_table {
+  width: 100%;
+}
+.news_table td {
+  height: 30px;
+}
+.no {
+  text-align: center;
+}
+.ntitle {
+  text-align: left;
 }

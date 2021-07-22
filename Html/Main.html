@@ -24,7 +24,6 @@
           <li><a href="/Html/Freeboard.html">자유게시판</a></li>
           <li><a href="/Html/Review.html">웹툰리뷰</a></li>
           <li><a href="/Html/Mypage.html">마이페이지</a></li>
-          <li><a href="#">검색</a></li>
       </ul>
 
       <ul class="navbar_search">
@@ -43,14 +42,15 @@
 <!--내용-->
   <div class="content">
     <div class="left_content">
+      <!--베스트리뷰-->
       <div class="best_review">
         <div class="best_r_title">
           <h3>Best 리뷰</h3>
         </div>
         <div class="best_table">
-          <table>
+          <table class="btable">
             <tr class="table_title">
-              <th colspan="2" >제목</th>
+              <th colspan="2" class="w_title">제목</th>
               <th class="writer">작성자</th>
             </tr>
             <tr>
@@ -68,9 +68,25 @@
               <td class="table_wtitle">리뷰 제목이 들어갈 곳</td>
               <td class="table_writer">작성자</td>
             </tr>
+            <tr>
+              <td class="bestimg"><img src="/images/부활남.jpg" width="30px" height="30px" alt=""></td>
+              <td class="table_wtitle">리뷰 제목이 들어갈 곳</td>
+              <td class="table_writer">작성자</td>
+            </tr>
+            <tr>
+              <td class="bestimg"><img src="/images/부활남.jpg" width="30px" height="30px" alt=""></td>
+              <td class="table_wtitle">리뷰 제목이 들어갈 곳</td>
+              <td class="table_writer">작성자</td>
+            </tr>
+            <tr>
+              <td class="bestimg"><img src="/images/부활남.jpg" width="30px" height="30px" alt=""></td>
+              <td class="table_wtitle">리뷰 제목이 들어갈 곳</td>
+              <td class="table_writer">작성자</td>
+            </tr>
           </table>
         </div>
       </div>
+      <!--조회수 순위-->
       <div class="rank">
         <div class="rank_title">
           <h3>조회수 순위</h3>
@@ -78,29 +94,30 @@
         <div class="ranks">
           <ul class="ranks_contents">
             <li class="ranks_li">
-              <div class="ranks_img"><img src="/images/가령의 정체불명 이야기.jpg" alt="리뷰썸네일">
+              <div class="ranks_img"><img src="/images/외모지상주의.jpg" alt="리뷰썸네일">
               </div>
-              <div class="rtitle">글제목</div>
+              <div class="rtitle">외모지상주의</div>
             </li>
             <li class="ranks_li">
               <div class="ranks_img"><img src="/images/같은 학교 친구.jpg" alt="리뷰썸네일">
               </div>
-              <div class="rtitle">글제목</div>
+              <div class="rtitle">같은 학교 친구</div>
             </li>
             <li class="ranks_li">
               <div class="ranks_img"><img src="/images/나의 첫번째 새벽.jpg" alt="리뷰썸네일">
               </div>
-              <div class="rtitle">글제목</div>
+              <div class="rtitle">나의 첫번째 새벽</div>
             </li>
             <li class="ranks_li">
               <div class="ranks_img"><img src="/images/신의 탑.jpg" alt="리뷰썸네일">
               </div>
-              <div class="rtitle">글제목</div>
+              <div class="rtitle">신의 탑</div>
             </li>
           </ul>
         </div>
       </div>
     </div>
+    <!--추천 웹툰-->
     <div class="recommend">
       <div class="recommend_title">
         <h3>추천 웹툰</h3>
@@ -108,69 +125,42 @@
       <div class="recommend_table">
         <table class="recommend_webtoon_table">
           <tr>
-            <th scope="col" class="tno">No.</th>
-            <th class="ttitle">Title</th>
-            <th class="twrite">Writer</th>
-            <th class="tdate">Date</th>
-            <th class="tread">Read</th>
+            <td class="reco_no">1</td>
+            <td class="recoimg"><img src="/images/낮에 뜨는 달.jpg" width="30px" height="30px" alt=""></td>
+            <td class="reco_title">낮에 뜨는 달</td>
           </tr>
           <tr>
-            <td scope="col">1</td>
-            <td class="left">제목이 들어갈 자리입니다.</td>
-            <td>admin</td>
-            <td>2020.10.12</td>
-            <td>Read</td>
-          </tr>
-          <tr>
-            <td scope="col">2</td>
-            <td class="left">사용자가 쓴 글의 제목입니다 </td>
-            <td>Host</td>
-            <td>2020.10.12</td>
-            <td>Read</td>
-          </tr>
-          <tr>
-            <td scope="col">3</td>
-            <td class="left"> 글쓴이의 자유로운 글</td>
-            <td>Host</td>
-            <td>2020.10.12</td>
-            <td>Read</td>
+            <td class="reco_no">2</td>
+            <td class="recoimg"><img src="/images/환생동물학교.jpg" width="30px" height="30px" alt=""></td>
+            <td class="reco_title">환생동물학교</td>
           </tr>
         </table>
       </div>
     </div>
+    <!--최신글-->
     <div class="news">
       <div class="news_title">
         <h3>최신글</h3>
       </div>
       <div class="news_write">
         <table class="news_table">
-          <tr>
-            <th scope="col" class="tno">No.</th>
-            <th class="ttitle">Title</th>
-            <th class="twrite">Writer</th>
-            <th class="tdate">Date</th>
-            <th class="tread">Read</th>
+          <tr class="table_title">
+            <th class="w_title">No.</th>
+            <th class="writer">제목</th>
           </tr>
           <tr>
-            <td scope="col">1</td>
-            <td class="left">제목이 들어갈 자리입니다.</td>
-            <td>admin</td>
-            <td>2020.10.12</td>
-            <td>Read</td>
+            <td class="no">1</td>
+            <td class="ntitle">제목이 들어갈 자리입니다.</td>
           </tr>
           <tr>
-            <td scope="col">2</td>
-            <td class="left">사용자가 쓴 글의 제목입니다 </td>
-            <td>Host</td>
-            <td>2020.10.12</td>
-            <td>Read</td>
+            <td class="no">2</td>
+            <td class="ntitle">제목이 들어갈 자리입니다.</td>
           </tr>
           <tr>
-            <td scope="col">3</td>
-            <td class="left"> 글쓴이의 자유로운 글</td>
-            <td>Host</td>
-            <td>2020.10.12</td>
-            <td>Read</td>
+            <td class="no">3</td>
+            <td class="ntitle">제목이 들어갈 자리입니다.</td>
+          </tr>
+
           </tr>
         </table>
       </div>
