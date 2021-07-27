@@ -170,10 +170,35 @@ a {
   float: left;
 }
 .myid {
-  padding: 30px 0 15px 180px;
+  padding: 20px 0 10px 180px;
+  font-size: 15px;
+  font-weight: bold;
 }
 .nickname {
-  padding: 10px 0 15px 180px;
+  padding: 5px 0 10px 180px;
+  font-size: 15px;
+  font-weight: bold;
+}
+.intro {
+  padding: 5px 0 15px 180px;
+}
+.info_box_etc {
+  display: block;
+  margin: 40px 40px 0 80px;
+  height: 130px;
+  width: 800px;
+  border: 1px solid gray;
+  border-radius: 10px;
+}
+.sex {
+  padding: 20px 0 10px 180px;
+  font-size: 15px;
+  font-weight: bold;
+}
+.age {
+  padding: 5px 0 10px 180px;
+  font-size: 15px;
+  font-weight: bold;
 }
 .change_info_box {
   display: block;
