@@ -27,6 +27,7 @@ a {
   border-radius: 5px;
   cursor: pointer;
 }
+
 #s_up {
   height: 30px;
   width: 75px;
@@ -36,6 +37,7 @@ a {
   color: white;
   cursor: pointer;
 }
+
 .navbar {
   width: 100%;
   border-bottom: 2.5px solid gray;
@@ -121,14 +123,21 @@ a {
 }
 .contents {
   display: inline-block;
+  width: 300px;
+  height: 300px;
 }
 .left {
   text-align: left;
 }
+.g-signin2 {
+  margin-left: 50px;
+}
+
 .link {
   text-decoration-line: none;
   color: black;
 }
+
 .textbox {
   border: 1.3px solid gray;
   width: 200px;

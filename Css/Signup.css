@@ -132,6 +132,11 @@ a {
   height: 30px;
   margin-left: 10px;
 }
+.gender {
+  margin-left: 10px;
+  width: 95px;
+  height: 30px;
+}
 table {
   padding-left: 10px;
   text-align: left;

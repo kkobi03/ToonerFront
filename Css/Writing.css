@@ -1,9 +1,10 @@
-/* 상단 네비게이션 바 */
+/* 상단 네비게이션 바  */
 :root {
   --main-color: rgb(180, 225, 244);
   --bright-color: rgba(204, 236, 250, 0.59);
   --back-color: #f6f6f6;
 }
+
 html,
 body {
   margin: 0;
@@ -16,7 +17,6 @@ body {
 a {
   text-decoration: none;
   color: black;
-  letter-spacing: 1.5px;
 }
 
 #s_in {
@@ -27,6 +27,7 @@ a {
   border-radius: 5px;
   cursor: pointer;
 }
+
 #s_up {
   height: 30px;
   width: 75px;
@@ -38,13 +39,19 @@ a {
 }
 
 .navbar {
+  width: 100%;
+  border-bottom: 2.5px solid gray;
+}
+
+.navbar_content {
+  margin: 0 auto;
+  width: 1200px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   /*background-color: gray;*/
   padding-right: 12px;
   padding-bottom: 0;
-  border-bottom: 2.5px solid gray;
 }
 .navbar_logo img {
   padding-left: 10px;

@@ -3,35 +3,35 @@
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" href="/Css/Signup.css">
-        <script src="https://kit.fontawesome.com/96bcc038d1.js" crossorigin="anonymous"></script>
+
     </head>
     <body>
 <!--상단 네비게이션 바-->
-<nav class="navbar">
-    <div class="navbar_content">
-      <div class="navbar_logo">
-          <a href="/Html/Main.html"><img src="/images/tooner_logo.png" alt=""></a>
-      </div>
-        
-      <ul class="navbar_menu">
-          <li><a href="/Html/Freeboard.html">자유게시판</a></li>
-          <li><a href="/Html/Review.html">웹툰리뷰</a></li>
-          <li><a href="/Html/Mypage.html">마이페이지</a></li>
-      </ul>
+    <nav class="navbar">
+        <div class="navbar_content">
+        <div class="navbar_logo">
+            <a href="/Html/Main.html"><img src="/images/tooner_logo.png" alt=""></a>
+        </div>
+            
+        <ul class="navbar_menu">
+            <li><a href="/Html/Freeboard.html">자유게시판</a></li>
+            <li><a href="/Html/Review.html">웹툰리뷰</a></li>
+            <li><a href="/Html/Mypage.html">마이페이지</a></li>
+        </ul>
 
-      <ul class="navbar_search">
-          <li><form action="">
-              <input id="search_box" type="text" name="search" placeholder="  내용을 입력해 주세요">
-              <button id="search_btn" type="submit"><i class="fas fa-search"></i></a></button>
-          </form></li>
-      </ul>
+        <ul class="navbar_search">
+            <li><form action="">
+                <input id="search_box" type="text" name="search" placeholder="  내용을 입력해 주세요">
+                <button id="search_btn" type="submit"><i class="fas fa-search"></i></a></button>
+            </form></li>
+        </ul>
 
-      <ul class="Sign_btn">
-          <li><a href="/Html/Signin.html"><button id="s_in">Sign In</button></a></li>
-          <li><a href="/Html/Signup.html"><button id="s_up" >Sign Up</button></a></li>        
-      </ul>
-  </div>
-  </nav>
+        <ul class="Sign_btn">
+            <li><a href="/Html/Signin.html"><button id="s_in">Sign In</button></a></li>
+            <li><a href="/Html/Signup.html"><button id="s_up" >Sign Up</button></a></li>        
+        </ul>
+    </div>
+    </nav>
                 <div class="box">
                     <div class="box_inner">
                         <div class="contents">
@@ -42,13 +42,21 @@
                                     <td>아이디(이메일)</td> <td><input id="id" class="textbox" type="text" placeholder=" 사용하실 이메일 주소를 입력해주세요" ></td>
                                 </tr>
                                 <tr>
-                                    <td>비밀번호</td> <td><input id="password" class="textbox" type="text"  placeholder=" 영문 숫자를 조합하여 작성해주세요" ></td>
+                                    <td>비밀번호</td> <td><input id="password" class="textbox" type="text"  placeholder=" 영문과 숫자를 조합하여 작성해주세요" ></td>
                                 </tr>
                                 <tr>
                                     <td>닉네임</td> <td><input id="nick" class="textbox" type="text"  placeholder=" 사용하실 닉네임을 입력해주세요" ></td>
                                 </tr>
                                 <tr>
-                                    <td>나이</td> <td><input id="age" class="textbox" type="text"  placeholder=" ex)로맨스" ></td>
+                                    <td>나이</td> <td><input id="age" class="textbox" type="text"  placeholder="숫자만 입력해주세요. ex) 20" ></td>
+                                </tr>
+                                <tr>
+                                    <td>성별</td> <td><select name="gender" id="gender" class="gender">
+                                        <option value="none">== 성별 ==</option>
+                                        <option value="male">남성</option>
+                                        <option value="female">여성</option>
+                                        <option value="other">기타</option>
+                                    </select></td>
                                 </tr>
                              </table>
                              <p><input id="signup" type="button" value="계정 생성 >"></p>
@@ -56,11 +64,15 @@
                     </div>
                   </div>
                 </div>
-                <script type="text/javascript" src="/Scripts/Signup.js"></script>
                 <footer></footer>
             </section>
         </section>
+        <script src="/Scripts/jquery-3.6.0.js"></script>
+        <script type="text/javascript" src="/Scripts/Signup.js"></script>
+        <script src="https://kit.fontawesome.com/96bcc038d1.js" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     </body>
+
 </html>
 
 

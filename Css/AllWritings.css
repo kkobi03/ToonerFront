@@ -27,6 +27,7 @@ a {
   border-radius: 5px;
   cursor: pointer;
 }
+
 #s_up {
   height: 30px;
   width: 75px;
@@ -36,6 +37,7 @@ a {
   color: white;
   cursor: pointer;
 }
+
 .navbar {
   width: 100%;
   border-bottom: 2.5px solid gray;
@@ -163,17 +165,37 @@ a {
   border-radius: 5px;
 }
 .writing_info {
-  padding: 10px;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  height: fit-content;
+}
+.writing_info_l {
+  float: left;
   list-style: none;
-  display: inline-block;
-  width: 95%;
+  width: 450px;
+}
+.writing_info_r {
+  float: right;
+  width: 450px;
+}
+#w_img {
+  width: 130px;
+  padding-top: 10px;
+  margin: 20px;
 }
 .w_title {
+  display: inline-block;
   font-size: 25px;
   padding: 20px 0 10px 30px;
+  width: fit-content;
 }
+
 .w_writer {
-  padding: 10px 0 10px 30px;
+  padding: 10px 0 0px 30px;
+}
+.w_star {
+  padding: 10px 0 0px 30px;
 }
 .w_date {
   display: inline-block;
@@ -185,6 +207,9 @@ a {
   padding: 10px 0 0px 30px;
   width: fit-content;
 }
+.writing_info_r {
+}
+
 .writing_content {
   margin: 10px;
   width: 98%;

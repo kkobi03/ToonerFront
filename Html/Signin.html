@@ -3,43 +3,46 @@
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" href="/Css/Singin.css">
+        <script src="/Scripts/jquery-3.6.0.js"></script>
+        <script src="https://apis.google.com/js/platform.js" async defer></script>
         <script src="https://kit.fontawesome.com/96bcc038d1.js" crossorigin="anonymous"></script>
+        <meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
     </head>
     <body>
-<!--상단 네비게이션 바-->
-<nav class="navbar">
-    <div class="navbar_content">
-      <div class="navbar_logo">
-          <a href="/Html/Main.html"><img src="/images/tooner_logo.png" alt=""></a>
-      </div>
-        
-      <ul class="navbar_menu">
-          <li><a href="/Html/Freeboard.html">자유게시판</a></li>
-          <li><a href="/Html/Review.html">웹툰리뷰</a></li>
-          <li><a href="/Html/Mypage.html">마이페이지</a></li>
-      </ul>
+    <!--상단 네비게이션 바-->
+    <nav class="navbar">
+        <div class="navbar_content">
+        <div class="navbar_logo">
+            <a href="/Html/Main.html"><img src="/images/tooner_logo.png" alt=""></a>
+        </div>
+            
+        <ul class="navbar_menu">
+            <li><a href="/Html/Freeboard.html">자유게시판</a></li>
+            <li><a href="/Html/Review.html">웹툰리뷰</a></li>
+            <li><a href="/Html/Mypage.html">마이페이지</a></li>
+        </ul>
 
-      <ul class="navbar_search">
-          <li><form action="">
-              <input id="search_box" type="text" name="search" placeholder="  내용을 입력해 주세요">
-              <button id="search_btn" type="submit"><i class="fas fa-search"></i></a></button>
-          </form></li>
-      </ul>
+        <ul class="navbar_search">
+            <li><form action="">
+                <input id="search_box" type="text" name="search" placeholder="  내용을 입력해 주세요">
+                <button id="search_btn" type="submit"><i class="fas fa-search"></i></a></button>
+            </form></li>
+        </ul>
 
-      <ul class="Sign_btn">
-          <li><a href="/Html/Signin.html"><button id="s_in">Sign In</button></a></li>
-          <li><a href="/Html/Signup.html"><button id="s_up" >Sign Up</button></a></li>        
-      </ul>
-  </div>
-  </nav>
+        <ul class="Sign_btn">
+            <li><a href="/Html/Signin.html"><button id="s_in">Sign In</button></a></li>
+            <li><a href="/Html/Signup.html"><button id="s_up" >Sign Up</button></a></li>        
+        </ul>
+    </div>
+    </nav>
         <!--박스-->
                 <div class="box">
                     <div class="box_inner">
                         <div class="contents">
                         <h2 class="left">Login</h2>
                         <form action="">
-                                <p><input class="textbox" type="text"  placeholder=" 아이디" ></p>
-                                <p><input class="textbox" type="text"  placeholder=" 비밀번호" ></p>
+                                <p><input id="id" class="textbox" type="text"  placeholder=" 아이디" ></p>
+                                <p><input id="password" class="textbox" type="text"  placeholder=" 비밀번호" ></p>
                                 <p><input id="button" type="submit" value="로그인"></p>
                                 <p>
                                 <a href="IdFind.html" class="link">아이디찾기</a>
@@ -47,7 +50,7 @@
                                 <a href="PassFind.html" class="link">비밀번호찾기</a>
                                 | 
                                 <a href="Signup.html" class="link">회원가입</a>
-                                </p>
+                                </p> 
                         </form>
                     </div>
                   </div>
@@ -55,5 +58,6 @@
                 <footer></footer>
             </section>
         </section>
+        <script async type="text/javascript" src="/Scripts/Signin.js"></script>
     </body>
 </html>
