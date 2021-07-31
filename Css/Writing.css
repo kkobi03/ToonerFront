@@ -155,7 +155,58 @@ a {
 .category li:hover {
   font-weight: bold;
 }
-/*글 작성*/
-.ck-editor__editable {
-  min-height: 500px;
+/*글 쓰기*/
+.page_t{
+  float: right;
+  width: 910px;
+  padding: 8px 0 0 0px;
+}
+.write_info{
+  margin: 0 20px 0px 20px;
+  width: 902px;
+  float: right;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+.write_title{
+  margin: 10px;
+}
+#write_t{
+  height: 25px;
+  width: 800px;
+  margin-left: 10px;
+}
+.write_star{
+  margin: 10px;
+}
+#star{
+  margin-left: 10px;
+  width: 80px;
+  height: 25px;
+}
+.write_content{
+  margin: 10px 20px 0px 20px;
+  width: 902px;
+  float: right;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+.write_writing{
+  margin: 10px;
+}
+#writing_c{
+  margin: 15px;
+  width: 840px;
+  height: 300px;
+}
+.writeBtn{
+  margin: 20px;
+  float: right;
+  height: 30px;
+  width: 75px;
+  border: none white;
+  background-color: var(--main-color);
+  border-radius: 5px;
+  color: black;
+  cursor: pointer;
 }

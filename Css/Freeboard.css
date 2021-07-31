@@ -182,7 +182,8 @@ article table#notice th {
 article table#notice td {
   text-align: center;
   padding: 10px 0;
-  border-bottom-width: 1px;
+  border-bottom-color: gray;
+  border-bottom-width: 0.8px;
   border-bottom-style: solid;
   border-bottom-width: #999;
 }

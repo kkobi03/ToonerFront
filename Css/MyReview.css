@@ -191,7 +191,7 @@ a {
 }
 .my_table td {
   padding: 10px 0;
-  border-bottom-width: 1px;
+  border-bottom-width: 0.06px;
   border-bottom-style: solid;
   border-bottom-width: #999;
 }

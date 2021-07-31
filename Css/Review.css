@@ -191,7 +191,7 @@ a {
 }
 .Reviews_list li {
   padding: 10px 10px 0px 10px;
-  border-bottom: 2px solid gray;
+  border-bottom: 1px solid gray;
 }
 .review_thumb {
   display: inline-block;
@@ -204,12 +204,12 @@ a {
   width: 60%;
 }
 .review_title {
-  padding: 5px 0 0 10px;
-  font-size: 24px;
+  padding: 10px 0 0 10px;
+  font-size: 20px;
 }
 .webtoon_title {
   height: 20px;
-  padding: 5px 0 0 10px;
+  padding: 10px 0 0 10px;
 }
 .writer {
   text-align: right;
